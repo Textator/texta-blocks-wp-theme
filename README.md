@@ -1,2 +1,2 @@
 # Texta Blocks Theme
-A take on Full Site Editing with Blocks for Wordpress / Gutenberg.
+A take on WP Gutenberg blocks / FSE (Full Site Editing)

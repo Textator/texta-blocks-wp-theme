@@ -1,7 +1,7 @@
 <?php
 
-if ( ! function_exists( 'textatheme_support' ) ) :
-	function textatheme_support()  {
+if ( ! function_exists( 'textablocks_support' ) ) :
+	function textablocks_support()  {
 
 		// Adding support for featured images.
 		add_theme_support( 'post-thumbnails' );
@@ -21,15 +21,15 @@ if ( ! function_exists( 'textatheme_support' ) ) :
 		// Add support for custom units.
 		add_theme_support( 'custom-units' );
 	}
-	add_action( 'after_setup_theme', 'textatheme_support' );
+	add_action( 'after_setup_theme', 'textablocks_support' );
 endif;
 
 /**
  * Enqueue scripts and styles.
  */
-function textatheme_scripts() {
+function textablocks_scripts() {
 	// Enqueue theme stylesheet.
-	wp_enqueue_style( 'textatheme-style', get_template_directory_uri() . '/style.css', array(), wp_get_theme()->get( 'Version' ) );
+	wp_enqueue_style( 'textablocks-style', get_template_directory_uri() . '/style.css', array(), wp_get_theme()->get( 'Version' ) );
 }
 
-add_action( 'wp_enqueue_scripts', 'textatheme_scripts' );
+add_action( 'wp_enqueue_scripts', 'textablocks_scripts' );
